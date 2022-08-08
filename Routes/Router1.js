@@ -1,7 +1,7 @@
 //jWt
 const jwt = require("jsonwebtoken");
 //bcrypt
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 //model
 const model = require("../Model/model");
 //router
