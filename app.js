@@ -15,14 +15,7 @@ const io = socketio(server, { cors: { origin: "*" } });
 app.use(express.json());
 app.use(morgan("dev"));
 
-//Cors
-const corsOptions = {
-  origin: "*",
-  credentials: true,
-  optionSuccessStatus: 200,
-};
-//access-control-allow-credentials:true
-app.use(cors(corsOptions)); // Use this after the variable declaration
+app.use(cors());
 
 // DB Connection
 const connection = require("./DB/mongoose");
