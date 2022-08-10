@@ -13,7 +13,7 @@ const io = socketio(server, { cors: { origin: "*" } });
 
 //Middleware
 app.use(express.json());
-app.use(morgan("dev"));
+app.use(morgan('tiny'));
 
 //Cors
 const corsOptions = {origin: "*",credentials: true,  optionSuccessStatus: 200,};
